@@ -27,7 +27,7 @@ namespace RESTCat.Controllers
         {
 
             var cats = _catRepository.GetCats(name, breed, color, sortOrder);
-            if (cats.Any())
+            if (cats !=null)
             {
                 return Ok(cats);
             }
