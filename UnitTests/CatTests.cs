@@ -27,5 +27,19 @@ namespace UnitTests
             Assert.Same(AddedCat2, cat2);
 
         }
+        [Fact]
+        public void DeleteCat_DeletesCatFromRepository()
+        {
+            //Arrange
+            CatRepositoryList catRepository = new CatRepositoryList();
+            Cat addedCat1 = catRepository.AddCat(cat1);
+            Cat addedcat2 = catRepository.AddCat(cat2);
+            //Act
+            var deletedCat = catRepository.DeleteCat(1);
+            //Assert
+            Assert.NotNull(deletedCat);
+            Assert.NotEmpty(catRepository.GetCats());
+            Assert.Equal(1, catRepository.GetCats().Count());
+        }
     }
 }
