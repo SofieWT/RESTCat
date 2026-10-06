@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "apis1": {
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/RESTCatSWTapi/apis/RESTCatSWT",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/RESTCatSofieapi/apis/RESTCatSofie",
       "type": "apis.azure"
     }
   }
